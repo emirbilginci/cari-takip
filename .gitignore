@@ -1,0 +1,24 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+build/
+dist/
+*.spec
+backup/
+
+# Eski geliştirme/yedek dosyaları
+*.backup
+*.before_*
+*.history_backup*
+*.dashboard_backup
+*.summary_fix_backup*
+*.receivable_backup
+fix_*.py
+
+build_windows/
+
+# Geliştirme yedekleri
+*.save
+*.dashboard_balance_backup
