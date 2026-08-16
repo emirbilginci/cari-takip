@@ -1,4 +1,5 @@
 from PySide6.QtWidgets import (
+
     QDialog,
     QVBoxLayout,
     QHBoxLayout,
@@ -909,9 +910,10 @@ class YeniIslemDialog(QDialog):
                     amount,
                     payment_method,
                     due_date,
-                    invoice_number
+                    invoice_number,
+                    is_cancelled
                 )
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?,0)
                 """,
                 (
                     customer_id,

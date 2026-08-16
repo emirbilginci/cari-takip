@@ -333,6 +333,12 @@ class OdemeDialog(QDialog):
                                 WHEN transaction_type =
                                      'purchase_on_credit'
                                 THEN amount
+
+                                WHEN transaction_type =
+                                     'purchase'
+                                     AND payment_method = 'credit'
+                                THEN amount
+
                                 ELSE 0
                             END
                         ),
@@ -585,7 +591,7 @@ class OdemeDialog(QDialog):
             # 2. KASA HAREKETİ
             #
             # cash_transactions.amount pozitif tutuluyor.
-            # type = expense olduğu için bu para çıkışıdır.
+            # transaction_type = payment olduğu için bu para çıkışıdır.
             # ==================================================
 
             supplier_name = (
@@ -596,15 +602,17 @@ class OdemeDialog(QDialog):
                 """
                 INSERT INTO cash_transactions (
                     transaction_id,
-                    type,
+                    customer_id,
+                    transaction_type,
                     amount,
                     description
                 )
-                VALUES (?, ?, ?, ?)
+                VALUES (?, ?, ?, ?, ?)
                 """,
                 (
                     transaction_id,
-                    "expense",
+                    supplier_id,
+                    "payment",
                     amount,
                     f"{supplier_name} - {description}",
                 )
