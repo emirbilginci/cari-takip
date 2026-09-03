@@ -4,6 +4,14 @@ Python ve PySide6 kullanılarak geliştirilmiş, küçük ve orta ölçekli işl
 
 Uygulama; cari hesapların, satış ve alış işlemlerinin, tahsilat ve ödemelerin, ürünlerin ve stok hareketlerinin tek bir arayüz üzerinden yönetilmesini sağlar.
 
+## 🪟 Windows Sürümü
+
+Windows kullanıcıları için hazır uygulama:
+
+👉 [Windows sürümünü indir](../../releases/latest)
+
+> ZIP dosyasını indirip çıkardıktan sonra `CariTakip.exe` dosyasını çalıştırabilirsiniz.
+
 ## 🚀 Özellikler
 
 - 📊 Dashboard üzerinden finansal özet görüntüleme
