@@ -50,3 +50,28 @@ cari-takip/
 Bu proje; cari hesap, satış, alış, tahsilat, ödeme ve stok takibi gibi temel işletme ihtiyaçlarını tek bir masaüstü uygulamasında yönetmek amacıyla geliştirilmiştir.
 
 Aynı zamanda Python ile masaüstü uygulama geliştirme, SQLite veritabanı yönetimi ve Windows uygulama paketleme süreçlerini uygulamalı olarak geliştirmek amacıyla hazırlanmıştır.
+## 🖥️ Uygulama Ekran Görüntüleri
+
+### Dashboard
+
+![Dashboard](screenshots/dashboard.jpg)
+
+### Cari Yönetimi
+
+![Cari Yönetimi](screenshots/cariler.jpg)
+
+### Yeni İşlem
+
+![Yeni İşlem](screenshots/yeni-islem.jpg)
+
+### Cari Detay
+
+![Cari Detay](screenshots/cari-detay.jpg)
+
+### Raporlama
+
+![Raporlama](screenshots/raporlar.jpg)
+
+### Ayarlar
+
+![Ayarlar](screenshots/ayarlar.jpg)
